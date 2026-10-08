@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop — Screw Face Product</title>
+<meta name="description" content="Shop Screw Face Product — hoodies $40 CAD, four for $125. No Evil tracksuits $70. Six colourways, out of Toronto.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=Inter+Tight:wght@300;400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css?v=7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230a0a0b'/%3E%3Ctext x='16' y='23' font-family='Arial' font-size='19' font-weight='bold' fill='%23f4f2ed' text-anchor='middle'%3ES%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="cursor" aria-hidden="true"><div class="cursor__dot"></div></div>
+<div class="cursor__ring" aria-hidden="true"><span></span></div>
+
+<!-- NAV -->
+<header class="nav">
+  <div class="nav__inner">
+    <a class="brand" href="index.html" aria-label="Screw Face Product — home"><span class="brand__mark" aria-hidden="true"></span><span>Screw&nbsp;Face&nbsp;Product<sup>SFP</sup></span></a>
+    <nav class="nav__links" aria-label="Primary" data-nav-primary></nav>
+    <div class="nav__utils">
+      <a href="shop.html" class="u-hide-sm">Search</a>
+      <button data-cart-open>Bag <span class="cart-count">(0)</span></button>
+      <button class="burger" data-menu-open aria-label="Menu"><i></i><i></i></button>
+    </div>
+  </div>
+</header>
+
+<!-- MENU -->
+<div class="menu" id="site-menu" role="dialog" aria-label="Menu" aria-modal="true" hidden>
+  <button class="menu__close" data-menu-close>Close</button>
+  <ul class="menu__list" data-nav-drawer></ul>
+  <div class="menu__foot">
+    <ul class="menu__links" data-nav-drawer-foot></ul>
+    <span class="label label--inv">Toronto, Canada</span>
+  </div>
+</div>
+
+<main>
+
+<section class="wrap phead">
+  <div class="phead__row">
+    <div>
+      <p class="label" style="margin-bottom:18px">Winter 26 — No Evil</p>
+      <h1 class="display h-xl">Shop<br>All</h1>
+    </div>
+    <p class="lead" style="max-width:38ch">Hoodies are $40 CAD each. Two for $70, three for $100, four for $125 — mix the colourways however you like, the price drops at the bag.</p>
+  </div>
+</section>
+
+<section class="wrap">
+  <div class="filters">
+    <div class="filters__set">
+      <button class="chip on" data-cat="all">All</button>
+      <button class="chip" data-cat="hoodies">Hoodies — $40</button>
+      <button class="chip" data-cat="tracksuits">Tracksuits — $70</button>
+    </div>
+    <div style="display:flex;gap:14px;align-items:center">
+      <span class="label" data-count>08 pieces</span>
+      <select class="sortsel" aria-label="Sort products">
+        <option value="">Sort — Featured</option>
+        <option value="low">Price — Low to high</option>
+        <option value="high">Price — High to low</option>
+        <option value="name">A → Z</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="products" data-grid></div>
+
+  <div style="display:flex;justify-content:center;padding-block:clamp(50px,7vw,110px)">
+    <a class="btn" href="lookbook.html">See it worn — Lookbook <i></i></a>
+  </div>
+</section>
+
+
+<div class="marquee marquee--slow">
+  <div class="marquee__track">
+    <span>Two for $70</span><span>Three for $100</span><span>Four for $125</span>
+    <span>Two for $70</span><span>Three for $100</span><span>Four for $125</span>
+  </div>
+</div>
+
+</main>
+<!-- FOOTER -->
+<footer class="footer dark">
+  <div class="wrap footer__cols">
+    <div>
+      <h4>Screw Face Product®</h4>
+      <p class="lead" style="max-width:34ch">Independent label out of Toronto. Hoodies and tracksuits, made in short runs.</p>
+      <p class="small" style="margin-top:20px">Toronto, Ontario<br>Canada</p>
+    </div>
+    <div>
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="shop.html">All pieces</a></li>
+        <li><a href="shop.html">Hoodies — $40</a></li>
+        <li><a href="shop.html">Tracksuits — $70</a></li>
+        <li><a href="shop.html">4 for $125</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Info</h4>
+      <ul data-foot-info></ul>
+    </div>
+    <div>
+      <h4>Follow</h4>
+      <ul data-foot-follow></ul>
+    </div>
+  </div>
+  <span class="footer__word">Screw Face Product</span>
+  <div class="wrap footer__base">
+    <span class="label label--inv">© <span data-year>2026</span> Screw Face Product</span>
+    <span class="label label--inv">Photography &amp; film — Screw Face Product</span>
+    <span class="label label--inv">Privacy · Terms</span>
+  </div>
+</footer>
+
+<!-- CART -->
+<div class="scrim"></div>
+<aside class="drawer" aria-label="Shopping bag">
+  <div class="drawer__head">
+    <span class="label">Your bag <span class="cart-count">(0)</span></span>
+    <button class="label" data-cart-close>Close</button>
+  </div>
+  <div class="drawer__body"></div>
+  <div class="drawer__foot">
+    <p class="label" style="margin-bottom:12px" data-bundle-nudge></p>
+    <div class="drawer__row"><span>Hoodies &amp; sets</span><span data-cart-gross>$0</span></div>
+    <div class="drawer__row drawer__row--save" data-saved-row hidden><span>Bundle discount</span><span data-cart-saved>− $0</span></div>
+    <div class="drawer__row drawer__row--total"><span>Total</span><strong data-cart-total>$0 CAD</strong></div>
+    <div class="drawer__row"><span class="small">Shipping</span><span class="small">Calculated at checkout</span></div>
+    <a class="btn btn--fill btn--block" style="margin-top:16px" href="#">Checkout <i></i></a>
+  </div>
+</aside>
+<div class="toast"></div>
+
+<script src="assets/js/data.js?v=3"></script>
+<script src="assets/js/nav.config.js?v=2"></script>
+<script src="assets/js/nav.js?v=1"></script>
+<script src="assets/js/main.js?v=3"></script>
+</body>
+</html>

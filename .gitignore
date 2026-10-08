@@ -1,0 +1,7 @@
+.DS_Store
+
+# Source material, not part of the site
+Photos/
+_replaced-stills/
+igexport-*.jpg
+/*.mp4
